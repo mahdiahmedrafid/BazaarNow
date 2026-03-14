@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - BazarNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">&#127811; BazaarNow</a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="cart.html" class="navbar__cart">
+          &#128722; Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+        <button class="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <h1 class="about-hero__title">About <span style="color:var(--primary);">BazarNow</span></h1>
+      <p class="about-hero__text">We're on a mission to make grocery shopping easier, faster, and more sustainable for every household in Bangladesh.</p>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Our Mission & Values</h2>
+        <p class="section__subtitle">What drives us every day to serve you better</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card__icon">&#127793;</div>
+          <h4 class="about-card__title">Freshness Guaranteed</h4>
+          <p class="about-card__text">We source directly from local farms and verified suppliers to ensure the freshest produce reaches your kitchen every time.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#9889;</div>
+          <h4 class="about-card__title">Lightning-Fast Delivery</h4>
+          <p class="about-card__text">Our efficient logistics network ensures your groceries arrive at your doorstep within hours of ordering, not days.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#127807;</div>
+          <h4 class="about-card__title">Eco-Friendly Approach</h4>
+          <p class="about-card__text">From biodegradable packaging to promoting organic products, we're committed to reducing our environmental footprint.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#128176;</div>
+          <h4 class="about-card__title">Best Prices</h4>
+          <p class="about-card__text">By cutting out middlemen and working directly with producers, we offer competitive prices without compromising quality.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#129309;</div>
+          <h4 class="about-card__title">Community First</h4>
+          <p class="about-card__text">We support local farmers and small businesses, strengthening Bangladesh's agricultural community with every order.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#128274;</div>
+          <h4 class="about-card__title">Secure & Reliable</h4>
+          <p class="about-card__text">Safe payments, real-time order tracking, and a dedicated support team ensure a stress-free shopping experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section section--green">
+    <div class="container">
+      <div class="green-banner" style="flex-direction:column;text-align:center;">
+        <div class="green-banner__icon">&#128640;</div>
+        <div>
+          <h3 class="green-banner__title">Our Story</h3>
+          <p class="green-banner__text" style="max-width:700px;margin:0 auto 16px;">
+            BazarNow was born from a simple frustration: the difficulty of getting fresh, quality groceries delivered reliably in Bangladesh's bustling cities. Founded in 2024, we started with a small team in Dhaka with one goal - to make bazar shopping as easy as a few taps on your phone. Today, we serve thousands of households across major cities, partnering with 200+ local farms and suppliers, while championing sustainability through our Green Choice initiative.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Meet Our Team</h2>
+        <p class="section__subtitle">The people behind your fresh deliveries</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card__avatar">&#128104;&#8205;&#128188;</div>
+          <h4 class="team-card__name">Rafiq Ahmed</h4>
+          <p class="team-card__role">Founder & CEO</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">&#128105;&#8205;&#128187;</div>
+          <h4 class="team-card__name">Fatima Khan</h4>
+          <p class="team-card__role">CTO</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">&#128104;&#8205;&#127859;</div>
+          <h4 class="team-card__name">Imran Hossain</h4>
+          <p class="team-card__role">Head of Operations</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">&#128105;&#8205;&#127891;</div>
+          <h4 class="team-card__name">Nadia Rahman</h4>
+          <p class="team-card__role">Marketing Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer__brand-name">&#127811; Bazar<span>Now</span></div>
+          <p class="footer__brand-text">Your trusted partner for fresh groceries and daily essentials delivery across Bangladesh.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Categories</div>
+          <div class="footer__links">
+            <a href="products.html?category=vegetables">Vegetables</a>
+            <a href="products.html?category=fruits">Fruits</a>
+            <a href="products.html?category=dairy">Dairy & Eggs</a>
+            <a href="products.html?category=rice">Rice & Grains</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <span>&#128205; Dhaka, Bangladesh</span>
+            <span>&#128222; +880 1700-000000</span>
+            <span>&#9993; hello@bazarnow.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 BazarNow. All rights reserved. | Made with &#128154; in Bangladesh
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

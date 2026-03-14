@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - BazarNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">&#127811; BazaarNow</a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="cart.html" class="navbar__cart">
+          &#128722; Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+        <button class="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">All Products</h1>
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Products</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section section--gray">
+    <div class="container">
+      <!-- Search & Sort -->
+      <div class="search-bar">
+        <input type="text" class="search-bar__input" id="search-input" placeholder="Search products...">
+        <select class="sort-select" id="sort-select">
+          <option value="default">Sort by: Default</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <div class="products-page">
+        <!-- Sidebar -->
+        <aside class="filter-sidebar">
+          <div class="filter-sidebar__title">Filters</div>
+
+          <div class="filter-group">
+            <span class="filter-group__label">Category</span>
+            <label><input type="checkbox" name="category" value="rice"> Rice & Grains</label>
+            <label><input type="checkbox" name="category" value="vegetables"> Vegetables</label>
+            <label><input type="checkbox" name="category" value="fruits"> Fruits</label>
+            <label><input type="checkbox" name="category" value="dairy"> Dairy & Eggs</label>
+            <label><input type="checkbox" name="category" value="fish"> Fish</label>
+            <label><input type="checkbox" name="category" value="meat"> Meat</label>
+            <label><input type="checkbox" name="category" value="lentils"> Lentils</label>
+            <label><input type="checkbox" name="category" value="oil"> Oil & Spices</label>
+            <label><input type="checkbox" name="category" value="beverages"> Beverages</label>
+            <label><input type="checkbox" name="category" value="personal"> Personal Care</label>
+            <label><input type="checkbox" name="category" value="organic"> Organic</label>
+            <label><input type="checkbox" name="category" value="flour"> Flour</label>
+            <label><input type="checkbox" name="category" value="handmade"> Handmade</label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-group__label">Eco-Friendly</span>
+            <label><input type="checkbox" id="green-only"> Green Choice Only</label>
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div>
+          <p style="margin-bottom:16px;color:var(--text-light);font-size:0.9rem;">
+            Showing <strong id="product-count">0</strong> products
+          </p>
+          <div class="products-grid" id="all-products"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer__brand-name">&#127811; Bazar<span>Now</span></div>
+          <p class="footer__brand-text">Your trusted partner for fresh groceries and daily essentials delivery across Bangladesh.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Categories</div>
+          <div class="footer__links">
+            <a href="products.html?category=vegetables">Vegetables</a>
+            <a href="products.html?category=fruits">Fruits</a>
+            <a href="products.html?category=dairy">Dairy & Eggs</a>
+            <a href="products.html?category=rice">Rice & Grains</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <span>&#128205; Dhaka, Bangladesh</span>
+            <span>&#128222; +880 1700-000000</span>
+            <span>&#9993; hello@bazarnow.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 BazarNow. All rights reserved. | Made with &#128154; in Bangladesh
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

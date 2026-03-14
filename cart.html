@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - BazarNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">&#127811; BazaarNow</a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="cart.html" class="navbar__cart">
+          &#128722; Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+        <button class="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Shopping Cart</h1>
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Cart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart -->
+  <section class="section section--gray">
+    <div class="container">
+      <!-- Empty State -->
+      <div class="cart-empty" id="cart-empty" style="display:none;">
+        <div class="cart-empty__icon">&#128722;</div>
+        <h3 class="cart-empty__title">Your cart is empty</h3>
+        <p class="cart-empty__text">Looks like you haven't added any items yet. Start shopping to fill your cart with fresh groceries!</p>
+        <a href="products.html" class="btn btn--primary">Start Shopping &#8594;</a>
+      </div>
+
+      <!-- Cart Content -->
+      <div class="cart-layout" id="cart-content">
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-summary">
+          <div class="cart-summary__title">Order Summary</div>
+          <div id="cart-summary-content"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer__brand-name">&#127811; Bazar<span>Now</span></div>
+          <p class="footer__brand-text">Your trusted partner for fresh groceries and daily essentials delivery across Bangladesh.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Categories</div>
+          <div class="footer__links">
+            <a href="products.html?category=vegetables">Vegetables</a>
+            <a href="products.html?category=fruits">Fruits</a>
+            <a href="products.html?category=dairy">Dairy & Eggs</a>
+            <a href="products.html?category=rice">Rice & Grains</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <span>&#128205; Dhaka, Bangladesh</span>
+            <span>&#128222; +880 1700-000000</span>
+            <span>&#9993; hello@bazarnow.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 BazarNow. All rights reserved. | Made with &#128154; in Bangladesh
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BazarNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">&#127811; BazaarNow</a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="cart.html" class="navbar__cart">
+          &#128722; Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+        <button class="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Contact Us</h1>
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Contact Info -->
+        <div>
+          <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:8px;">Get in Touch</h2>
+          <p style="color:var(--text-light);margin-bottom:32px;">Have a question, suggestion, or need help with an order? We'd love to hear from you. Reach out through any of these channels.</p>
+
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">&#128205;</div>
+              <div>
+                <div class="contact-info-card__title">Our Office</div>
+                <div class="contact-info-card__text">House 42, Road 11, Banani<br>Dhaka 1213, Bangladesh</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">&#128222;</div>
+              <div>
+                <div class="contact-info-card__title">Phone</div>
+                <div class="contact-info-card__text">+880 1700-000000<br>+880 1800-000000</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">&#9993;</div>
+              <div>
+                <div class="contact-info-card__title">Email</div>
+                <div class="contact-info-card__text">hello@bazarnow.com<br>support@bazarnow.com</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">&#128337;</div>
+              <div>
+                <div class="contact-info-card__title">Business Hours</div>
+                <div class="contact-info-card__text">Saturday - Thursday: 8 AM - 10 PM<br>Friday: 2 PM - 10 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Send us a Message</h3>
+          <div class="form-group">
+            <label for="cf-name">Your Name *</label>
+            <input type="text" id="cf-name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email Address *</label>
+            <input type="email" id="cf-email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="cf-phone">Phone Number</label>
+            <input type="tel" id="cf-phone" placeholder="+880 1XXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject *</label>
+            <select id="cf-subject" required>
+              <option value="">Select a topic</option>
+              <option>Order Issue</option>
+              <option>Product Inquiry</option>
+              <option>Delivery Question</option>
+              <option>Feedback</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message *</label>
+            <textarea id="cf-message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message &#8594;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map placeholder -->
+  <section class="section section--white" style="padding:0;">
+    <div style="background:#e2e8f0;height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+      <span style="font-size:3rem;">&#128506;</span>
+      <span style="font-weight:600;color:var(--text-light);">Map: Banani, Dhaka, Bangladesh</span>
+      <span style="font-size:0.85rem;color:var(--text-light);">(Map integration placeholder)</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer__brand-name">&#127811; Bazar<span>Now</span></div>
+          <p class="footer__brand-text">Your trusted partner for fresh groceries and daily essentials delivery across Bangladesh.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Categories</div>
+          <div class="footer__links">
+            <a href="products.html?category=vegetables">Vegetables</a>
+            <a href="products.html?category=fruits">Fruits</a>
+            <a href="products.html?category=dairy">Dairy & Eggs</a>
+            <a href="products.html?category=rice">Rice & Grains</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <span>&#128205; Dhaka, Bangladesh</span>
+            <span>&#128222; +880 1700-000000</span>
+            <span>&#9993; hello@bazarnow.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 BazarNow. All rights reserved. | Made with &#128154; in Bangladesh
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
